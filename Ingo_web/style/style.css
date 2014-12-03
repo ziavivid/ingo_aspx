@@ -1,0 +1,122 @@
+﻿@charset "utf-8";
+
+body { font-family: 'gothammediumregular'; }
+/* CSS Document */
+@font-face {
+    font-family: 'gothammediumregular';
+    src: url('fonts/gothammedium.eot');
+    src: url('fonts/gothammedium.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gothammedium.woff2') format('woff2'),
+         url('fonts/gothammedium.woff') format('woff'),
+         url('fonts/gothammedium.ttf') format('truetype'),
+         url('fonts/gothammedium.svg#gothammediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a { transition: all ease-in-out 0.4s; -webkit-transition: all ease-in-out 0.4s; -moz-transition: all ease-in-out 0.4s; -o-transition: all ease-in-out 0.4s; -ms-transition: all ease-in-out 0.4s; }
+
+.blok{ display:block;}
+.clr-red { color:#ff0000;}
+header { background:#7bc143; padding:17px 0px 20px 0px; }
+.in-language a { color:#fff; display: block; font-size:18px;  padding: 0px 0px; }
+.in-language a , .comments a { line-height: 33px;}
+.fa .fa-angle-down { vertical-align:top; }
+.profile { color: #fff; font-size: 15px; line-height: 32px; }
+.profile img { margin-right: 10px; }
+.comments { /*width:66px;*/ text-align: right; }
+.search { padding-left: 45px; }
+.relative { position: relative;}
+.comments a { display:block; }
+/*nav*/
+.navbar-nav { width:100%; text-align:center; }
+.navbar-default li a { background:url(../images/border-nav.png) no-repeat right center; line-height:70px; position:relative; }
+.navbar-default li:last-child a { background:none; }
+.navbar-default .nav>li.active a:after { content:""; position:absolute; left:41%; bottom:0; border:5px; background:url(../images/nav-arrow.png); width:24px; height:20px; }
+.m-bot { margin-bottom:48px; }
+
+.inner-content h2 { border:none; padding:0px; margin-bottom:10px; color:#666666; text-align:center; }
+.inner-content { padding:0; position:relative; }
+.ingo-close { cursor:pointer; position:absolute; right: 30px; top: 30px; }
+.content-section { border:20px solid #ebebeb; min-height: 200px; }
+.inner-content { padding:30px 70px 70px; background:#fff; }
+.ingo-black { color:#666666; font-size:20px; }
+.ingo-status { font-size:18px; }
+a.ingo-report { font-style:normal; font-size:20px; text-decoration:underline; padding-left:10px;color: #666; }
+.ingo-questions input[type="submit"] { background:#7bc143; color:#fff; display:inline-block; margin-top:8px; padding:10px 20px; border:none; }
+.ingo-questions:hover input[type="submit"]{ background:#6aaf32; transition:all 0.3s ease-in-out 0.3s; -webkit-transition:all 0.3s ease-in-out 0.3s; -moz-transition:all 0.3s ease-in-out 0.3s; -ms-transition:all 0.3s ease-in-out 0.3s; -o-transition:all 0.3s ease-in-out 0.3s; }
+.ingo-message { background:#ebebeb; margin-bottom:38px; padding:22px 63px 26px 63px; }
+.ingo-detail { padding-bottom:30px; position: relative; }
+.ingo-requist { color:#666666; font-size:16px; }
+details h1 { padding-left:30px; }
+.ingo-next-step ul li { display:inline-block; }
+.ingo-next-step ul li input[type="submit"] { color:#666666; display:block; font-size:19px; padding:0 20px; height: 60px; line-height: 60px; border:none; background:none; }
+.ingo-next-step ul li input[type="submit"].ingo-next-page { color:#fff !important; background:#4e9218 !important; height: 60px; line-height: 60px; padding: 0 65px !important; }
+.ingo-next-step { border-top:1px solid #e0e0e0; padding:45px 0px; }
+.ingo-print { margin:67px 0px 141px 0px; }
+/*footer*/
+footer { background:#65bf28; height: 99px; line-height: 99px; }
+footer p{ color:#fff; font-size:18px; margin-bottom: 0; }
+
+/*browse*/
+.what span {background: url("../images/link.png") no-repeat scroll right center rgba(0, 0, 0, 0);display: inline-block;height: 25px !important;margin: 0 10px 0 0;
+  overflow: hidden;width: auto;float: left;}
+.what span input { cursor: pointer;height: 25px !important; margin-left: -81px;padding-right: 23px; opacity: 1; width: auto;}
+.fileinputs {  position: relative; }
+.BtnFileUpload {background: url(../images/globe.png) no-repeat;width:20px;
+    border: medium none;
+}
+div.fakefile { position: absolute;  top: 0px; left: 0px; z-index: 1; }
+input.file { background: none repeat scroll 0 0 rgba(0, 0, 0, 0); left: 0px; opacity: 1; overflow: hidden; padding-left: 0;
+    padding-right: 40px; position: relative; text-align: left; width: 260px; z-index: 2; }
+
+
+/*media query*/
+@media ( max-width:480px ){
+    .ingo-close > img { width: 25px; }
+    }
+@media ( max-width:768px ){
+	h1 { font-size:18px;}
+    .logo { text-align: center; margin-bottom: 10px;}
+    .in-language { text-align: center; }
+	summary.ingo-requist{ font-size:14px; }
+	.col-md-12 .content-section { border:10px solid rgb(235, 235, 235); }
+	.inner-content { padding:10px 10px; background:#fff; }
+	.nav-tabs > li > a { font-size:14px; line-height:50px; padding:8px 20px 8px 40px; }
+	.tab-content details h1 { padding-left:0px; }
+	.tab-content .ingo-next-step ul li a { font-size:14px; padding:10px 20px;}
+	.tab-content .ingo-next-page { padding:10px 20px !important;}
+    .resp-tab-content { display: none; padding: 15px 0 !important; }
+    .ingo-close { right: 0; top: 0; }
+    .ingo-print { margin: 30px 0; }
+    footer { height: auto; line-height: 24px; padding: 10px 0; }
+    footer p{ font-size:12px; }
+    details h1 { padding-left: 0px; }
+    .navbar-nav { margin-bottom: 10px;}
+    .navbar-default .navbar-nav li a { background: none repeat scroll 0 0 #F7F7F7; border-bottom:1px solid #ECECEC; color: #7BC143; }
+    .navbar-default .nav > li.active a:after { background:none !important; }
+    .ingo-detail h3 { text-align: left !important; padding:0 0px 10px; border-bottom:1px solid #fbfbfb; margin:0 15px 10px !important; }
+    h2.resp-accordion span { float: right; margin-top: 11px; }
+}
+
+@media (min-width:641px) and ( max-width:768px ){
+    .ingo-close { top: 0px; }
+    }
+@media (min-width:768px) and ( max-width:1024px ){
+    .search { padding-left: 25px; }
+    .ingo-message { padding: 30px 30px;}
+    details h1 { padding-left: 0px; }
+    .ingo-close { top: 0px; }
+    }
+@media (min-width:900px) and ( max-width:1024px )
+{
+    .inner-content { padding: 0; }
+    .ingo-close { right: 30px; top: 30px; }
+}
+@media ( max-width:640px ){
+.profile { text-align:left !important; margin: 10px 0 20px; padding:0 15px 20px; border-bottom: 1px solid #FFF; }
+.comments { float: left; width: 50%; text-align: left; }
+.search { float: right; text-align: right; width: 50%; }
+.logo { float: left; }
+.in-language { float: right; }
+}

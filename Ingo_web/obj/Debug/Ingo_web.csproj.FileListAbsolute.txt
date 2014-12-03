@@ -1,0 +1,7 @@
+D:\Rajkamal_test_projects\sample\Ingo_web\bin\Ingo_web.dll
+D:\Rajkamal_test_projects\sample\Ingo_web\bin\Ingo_web.pdb
+D:\Rajkamal_test_projects\sample\Ingo_web\obj\Debug\Ingo_web.csprojResolveAssemblyReference.cache
+D:\Rajkamal_test_projects\sample\Ingo_web\obj\Debug\Ingo_web.dll
+D:\Rajkamal_test_projects\sample\Ingo_web\obj\Debug\Ingo_web.pdb
+D:\Rajkamal_test_projects\sample\Ingo_web\bin\BLL.dll
+D:\Rajkamal_test_projects\sample\Ingo_web\bin\BLL.pdb

@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="Ingo_web.MainMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Ingo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--style-->
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link href="style/font-awesome.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style/easy-responsive-tabs.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--header-->
+        <header class="m-bot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 mob-head clearfix">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <!--col-lg-2 col-md-2 col-sm-3-->
+                                <div class="logo"><a href="index.aspx">
+                                    <img src="images/ingo-logo.png" alt="ingo"></a> </div>
+                            </div>
+                            <div class="col-xs-9">
+                                <!--col-lg-10 col-md-10 col-sm-9-->
+                                <div class="in-language"><a href="#">Translator <i class="fa fa-angle-down"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 clearfix">
+                        <div class="row">
+                            <div class="top-menu-right">
+                                <div class="profile col-lg-8 col-md-8 col-sm-8 text-right">
+                                    <img src="images/john-doe.png" alt="clientphoto">
+                                    Mr. John Doe</div>
+                                <div class="comments col-lg-2 col-md-2  col-sm-2"><a href="#">
+                                    <img src="images/comments.png" alt="comment"></a> </div>
+                                <div class="search col-lg-2 col-md-2  col-sm-2"><a href="#"><i class="fa fa-search"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--header-->
+        <!--container-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--navbar-->
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!--nav links-->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li id="lsthome"><a href="">HOME</a></li>
+                                <li id="lstrequest" class="active"><a href="RequestList.aspx">REQUEST LIST </a></li>
+                                <li id="lstsearch"><a href="">SEARCH</a></li>
+                                <li id="lsttrack"><a href="">TRACK</a></li>
+                                <li id="lstnewrequest"><a href="">NEW REQUEST</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!--navbar-->
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content-section">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+                    <div class="text-center ingo-print">
+                        <form>
+                            <input type="image" src="images/print-button.png" alt="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!--container-->
+        <!--footer-->
+        <footer class="text-center">
+            <p>© Ingo, Inc 2014. A Coden Company.All Rights Reserved.</p>
+        </footer>
+        <!--footer-->
+    </form>
+    <!--script-->
+<script src="script/jquery-2.1.1.min.js" type="application/javascript"></script>
+<script src="script/easyResponsiveTabs.js" type="text/javascript"></script>
+<script src="script/bootstrap.min.js" type="application/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#Tab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion           
+            width: 'auto', //auto or any width like 600px
+            fit: true,   // 100% fit in a container
+            closed: 'accordion', // Start closed if in accordion view
+            activate: function (event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#tabInfo');
+                var $name = $('span', $info);
+
+                $name.text($tab.text());
+
+                $info.show();
+            }
+        });
+    });
+
+
+</script>
+</body>
+
+</html>

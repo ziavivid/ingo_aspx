@@ -1,0 +1,9 @@
+D:\Rajkamal_test_projects\Live Project\NewyorkInkJet_Web\DAL\bin\Debug\DAL.dll
+D:\Rajkamal_test_projects\Live Project\NewyorkInkJet_Web\DAL\bin\Debug\DAL.pdb
+D:\Rajkamal_test_projects\Live Project\NewyorkInkJet_Web\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Rajkamal_test_projects\Live Project\NewyorkInkJet_Web\DAL\obj\Debug\DAL.dll
+D:\Rajkamal_test_projects\Live Project\NewyorkInkJet_Web\DAL\obj\Debug\DAL.pdb
+D:\Rajkamal_test_projects\sample\DAL\bin\Debug\DAL.dll
+D:\Rajkamal_test_projects\sample\DAL\bin\Debug\DAL.pdb
+D:\Rajkamal_test_projects\sample\DAL\obj\Debug\DAL.dll
+D:\Rajkamal_test_projects\sample\DAL\obj\Debug\DAL.pdb
